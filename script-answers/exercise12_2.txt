@@ -1,0 +1,9 @@
+Script started on Mon Sep 25 04:49:20 2023
+[1m[7m%[27m[1m[0m                                                                                                                                                               [0m[27m[24m[Jangelicaroselie@Angelicas-Air fullstackopen_osa12 % [K[?2004h[7mdocker run -it ubuntu bash[27m[26D[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27mb[27ma[27ms[27mh[1C h[?2004l
+[?2004h]0;root@52857f437b7f: /root@52857f437b7f:/# [7mmkdir -p /usr/src/app[27mmkdir -p /usr/src/app
+[?2004l[?2004h]0;root@52857f437b7f: /root@52857f437b7f:/# echo [7m"console.log('Hello world');" > /usr/src/app/index.js[27m]0;root@52857f437b7f: /root@52857f437b7f:/# echo "console.log('Hello world');" > /usr/src/app/index.js
+[?2004l[?2004h]0;root@52857f437b7f: /root@52857f437b7f:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                                                               [0m[27m[24m[Jangelicaroselie@Angelicas-Air fullstackopen_osa12 % [K[?2004heexit[?2004l
+
+Script done on Mon Sep 25 04:51:43 2023
