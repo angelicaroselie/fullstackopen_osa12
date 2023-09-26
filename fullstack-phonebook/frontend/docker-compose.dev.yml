@@ -1,0 +1,13 @@
+version: '3' # This is the version of the docker-compose file
+
+services:
+  app:
+    image: phonebook-front-dev
+    build:
+      context: . # The context will pick this directory as the "build context"
+      dockerfile: dev.Dockerfile # dockerfile to read
+    volumes:
+      - ./:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.yml"
+    ports:
+      - 3000:3000
+    container_name: phonebook-front-dev # name of the container

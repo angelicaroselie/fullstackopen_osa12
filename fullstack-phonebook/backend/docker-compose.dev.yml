@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: . # The context will pick this directory as the "build context"
+      dockerfile: dev.Dockerfile # dockerfile to use for building the image
+    container_name: phonebook_backend_dev
+    ports:
+      - 5001:5001
+    environment:
+      MONGO_URL: MONGODB_URI
+    volumes:
+      - .:/app
+      - /app/node_modules

@@ -1,0 +1,32 @@
+version: '3'
+services:
+  app: # frontend
+    image: phonebook-front-dev
+    build:
+      context: ./frontend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./frontend/:/usr/src/app
+    ports:
+      - 3000:3000
+    environment:
+      REACT_APP_API_URL: http://localhost:5001
+      CHOKIDAR_USEPOLLING: "true"
+    container_name: phonebook-front-dev
+  
+  backend: # backend
+    image: phonebook-back-dev
+    build:
+      context: ./backend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./backend/:/app
+    ports:
+      - 5001:5001
+    expose:
+      - 5001
+    container_name: phonebook-back-dev
+  
+  debug-helper:
+    image: busybox
+
